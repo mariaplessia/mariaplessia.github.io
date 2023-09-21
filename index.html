@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Maria's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo">Maria Plessia</div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -21,7 +21,7 @@
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo">Maria Plessia</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -38,16 +38,16 @@
     </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+        <img src="./assets/profile-pic.png" alt="Maria Plessia profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">John Doe</h1>
-        <p class="section__text__p2">Frontend Developer</p>
+        <h1 class="title">Maria Plessia</h1>
+        <p class="section__text__p2">Machine Learning Engineer</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
+            onclick="window.open('./assets/resume-mariaplessia.pdf')"
           >
             Download CV
           </button>
@@ -60,20 +60,21 @@
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://linkedin.com/'"
+            onclick="location.href='https://www.linkedin.com/in/maria-plessia/'"
           />
           <img
             src="./assets/github.png"
             alt="My Github profile"
             class="icon"
-            onclick="location.href='https://github.com/'"
+            onclick="location.href='https://github.com/mariaplessia'"
           />
         </div>
       </div>
     </section>
     <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
+      <p class="section__text__p1">ENGINEER | RESEARCHER</p>
+      
       <div class="section-container">
         <div class="section__pic-container">
           <img
@@ -91,7 +92,7 @@
                 class="icon"
               />
               <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
+              <p>Carnegie Mellon University<br />Graduate Researcher <br /><br />Technical University of Dresden<br />Machine Learning Engineer</p>
             </div>
             <div class="details-container">
               <img
@@ -100,17 +101,15 @@
                 class="icon"
               />
               <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+              <p>Carnegie Mellon University<br />M.S. Mechanical Engineering - Research<br /><br />University of Rochester<br />B.S. Mechanical Engineering, Computer Science Minor</p>
             </div>
           </div>
           <div class="text-container">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
+              My name is Maria Plessia. I am an MS student at Carnegie Mellon University, and a member of AiPEX Lab and BioSiMM Lab. I was born and raised in Greece, and have lived in Singapore and the US.
+My research interests lie within the intersection of Deep Learning and improved engineering solutions, with emphasis in making state of the art technology accessible. My current research project focuses on using quantitative metrics to standardize the transferability and scalability of Graph Neural Networks.
+I hold a Bachelor of Science in Mechanical Engineering from the University of Rochester. As an undergrad, I had the opportunity to complete research projects in the Complex Flow Group and the Material Models Group (TU Dresden), supported by the Summer Research Grant and the DAAD RISE Fellowship. 
+Besides my STEM-based education, I have grown up practicing multiple forms of art. I was trained in classical piano for 10 years, and also studied music theory. I have been painting and sketching since I was little, and have recently taken up photography. I also enjoy cooking.
             </p>
           </div>
         </div>
@@ -128,7 +127,7 @@
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+            <h2 class="experience-sub-title">Programming</h2>
             <div class="article-container">
               <article>
                 <img
@@ -137,8 +136,37 @@
                   class="icon"
                 />
                 <div>
+                  <h3>Python</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MATLAB</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
                   <h3>HTML</h3>
-                  <p>Experienced</p>
                 </div>
               </article>
               <article>
@@ -149,7 +177,6 @@
                 />
                 <div>
                   <h3>CSS</h3>
-                  <p>Experienced</p>
                 </div>
               </article>
               <article>
@@ -159,47 +186,13 @@
                   class="icon"
                 />
                 <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
+                  <h3>Java</h3>
                 </div>
               </article>
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+            <h2 class="experience-sub-title">Machine Learning Frameworks & Tools</h2>
             <div class="article-container">
               <article>
                 <img
@@ -208,8 +201,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
+                  <h3>Pytorch</h3>
                 </div>
               </article>
               <article>
@@ -219,8 +211,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
+                  <h3>Tensorflow & Keras</h3>
                 </div>
               </article>
               <article>
@@ -230,8 +221,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
+                  <h3>OpenCV</h3>
                 </div>
               </article>
               <article>
@@ -241,8 +231,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
+                  <h3>Pytorch Geometric & DGL</h3>
                 </div>
               </article>
             </div>
@@ -269,17 +258,17 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
+            <h2 class="experience-sub-title project-title">MyTorch</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://drive.google.com/drive/folders/1F1jj8RRD7jMAawNp9PAbvj0Rvje5wXHo?usp=sharing'"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://drive.google.com/drive/folders/1F1jj8RRD7jMAawNp9PAbvj0Rvje5wXHo?usp=sharing'"
               >
                 Live Demo
               </button>
@@ -293,17 +282,17 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <h2 class="experience-sub-title project-title">Attention-Based End-to-End Speech-to-Text Deep Neural Network</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://drive.google.com/drive/folders/1F1jj8RRD7jMAawNp9PAbvj0Rvje5wXHo?usp=sharing'"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://drive.google.com/drive/folders/1F1jj8RRD7jMAawNp9PAbvj0Rvje5wXHo?usp=sharing'"
               >
                 Live Demo
               </button>
@@ -317,17 +306,17 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <h2 class="experience-sub-title project-title">Face Classification and Verification using CNNs</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://drive.google.com/drive/folders/1F1jj8RRD7jMAawNp9PAbvj0Rvje5wXHo?usp=sharing'"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://drive.google.com/drive/folders/1F1jj8RRD7jMAawNp9PAbvj0Rvje5wXHo?usp=sharing'"
               >
                 Live Demo
               </button>
@@ -352,7 +341,7 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+          <p><a href="mailto:mplessia@andrew.cmu.edu">mplessia@andrew.cmu.edu</a></p>
         </div>
         <div class="contact-info-container">
           <img
@@ -360,7 +349,7 @@
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          <p><a href="https://www.linkedin.com/in/maria-plessia/">LinkedIn</a></p>
         </div>
       </div>
     </section>
@@ -375,7 +364,7 @@
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+      <p>Copyright &#169; 2023 Maria Plessia. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
   </body>
