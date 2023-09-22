@@ -440,8 +440,3 @@ footer p {
     align-items: center;
     height: 300px; /* Adjust the height as needed */
   }
-
-  .project-img {
-    max-width: 100%; /* Ensure the image doesn't exceed its original size */
-    height: auto; /* Maintain the image's aspect ratio */
-  }
