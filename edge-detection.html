@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edge Detection</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+</head>
+<body>
+  
+  <nav id="desktop-nav">
+    <div class="logo">Maria Plessia</div>
+      <div>
+        <ul class="nav-links">
+          <a href="index.html">Main Page</a>
+        </ul>
+      </div>
+  </nav>
+  
+  <section id="about">
+      <h1 class="title">Edge Detection</h1>
+      <p class="section__text__p1">Implementing a custom Sobel Filter and using OpenCV's Canny Filter in Python</p>
+      <p><br/><br/><br/><br/></p>
+
+      <h2 class="part-title">Custom Sobel Filter</h2>
+      
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/edgedet/sobel-vis.png"
+            alt="Project 1 part 1 pic"
+            class="about-pic"
+          />
+        </div>
+        <div class="text-container">
+            
+            <p>
+             For the custom Sobel Filter, I preprocessed the images by changing them to grayscale. Then, I implemented the 
+              Horizontal Sobel filter, which consists of a horizontal derivative filter and a vertical Gaussian filter.
+
+              <br/>
+              <br/>
+            </p>
+
+
+            <img 
+              src="./assets/edgedet/sobel1.png"
+              alt="Project 1 part 1 pic"
+              class="about-pic method"
+              />
+
+            
+            <p>
+              Then, I implemented the Vertical Sobel filter, which consists of a vertical derivative filter and a horizontal Gaussian filter.
+              <br/>
+              <br/>
+            </p>
+
+            <img 
+              src="./assets/edgedet/sobel2.png"
+              alt="Project 1 part 1 pic"
+              class="about-pic method"
+              />
+
+          <p>
+            Finally, I combined the vertical and horizontal Sobel images to produce the final Sobel-filtered output image and inverted it so that the background is white and the edges are black.
+
+            <br/>
+            <br/>
+          </p>
+          
+        </div>
+      </div>
+
+
+      <h2 class="part-title">Canny Filter</h2>
+
+        <div class="section-container">
+            <div class="section__pic-container">
+              <img
+                src="./assets/edgedet/canny-vis.png"
+                alt="Project 1 part 1 pic"
+                class="about-pic"
+              />
+            </div>
+      
+        <div class="text-container">
+            
+            <p>
+              I preprocessed the images by denoising with the application of a 5x5 Gaussian blur, and then changing them to grayscale. 
+              Then, I initialized the threshold and aperture values, defined the slide bars for them, and initialized the image. 
+
+              <br/>
+              <br/>
+            </p>
+
+            <img 
+              src="./assets/edgedet/canny1.png"
+              alt="Project 1 part 1 pic"
+              class="about-pic method"
+              />
+
+            
+            <p>
+              Using an indefinite loop that breaks using esc, I updated the threshold and aperture values for every iteration of the loop 
+              and dynamically renewed the image in the GUI to reflect the new changes, while also inverting it so that the background is 
+              white and the edges are black.
+
+              <br/>
+              <br/>
+            </p>
+
+            <img 
+              src="./assets/edgedet/canny2.png"
+              alt="Project 1 part 1 pic"
+              class="about-pic method"
+              />
+            
+        
+        </div>
+      </div>
+
+    
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#details'"
+      />
+    </section>
+
+    <section>
+      
+    </section>
+
+</body>
+</html>
