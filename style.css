@@ -425,6 +425,10 @@ article .icon {
   height: 2.5rem;
 }
 
+.about-pic.method {
+  max-width: 300px; 
+}
+
 /* FOOTER SECTION */
 
 footer {
