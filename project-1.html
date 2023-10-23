@@ -166,6 +166,8 @@
   <section>
 
       <h2 class="part-title">Part 3</h2>
+    <br/>
+    <br/>
       
       <div class="section-container">
         <div class="section__pic-container">
@@ -219,15 +221,17 @@
               and the backward, where we calculate the divergence, followed by decode the model output probabilities to get an
               understandable output. For that, I implemented both Beam and Greedy Search: 
               <br/>
-              Greedy Search takes the most probable output at each time step, and chooses the most likely time-aligned
+              <br/>
+              <li>Greedy Search takes the most probable output at each time step, and chooses the most likely time-aligned
               sequence by choosing the symbol corresponding to the highest probability at that time step. An issue that arises
               is that it misses out on alignments that can lead to higher probability outputs because it only selects 
-              the most probable output for each time step.
+              the most probable output for each time step.</li>
               <br/>
-              Beam Search is a more effective decoding technique that obtains a sub-optimal result out of sequential decisions.
+              <br/>
+              <li>Beam Search is a more effective decoding technique that obtains a sub-optimal result out of sequential decisions.
               At each time step a list of possible outputs is maintained and the score for each possible output at
               current time step is the accumulated with all the alignments that map to it. Based on this score, the
-              top-k beams aree selected to expand for the next time-step.
+              top-k beams aree selected to expand for the next time-step.</li>
               <br/>
             </p>
           </div>
