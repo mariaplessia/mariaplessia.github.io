@@ -61,8 +61,8 @@
           
           <div class="text-container">
             <p>
-              In this project, I will implement my own deep learning library from scratch.
-              Inspired by PyTorch, my library – MyTorch – will be used to create everything from multilayer perceptrons,
+              In this project, I implemented my own deep learning library from scratch.
+              Inspired by PyTorch, my library – MyTorch – was used to create everything from multilayer perceptrons,
               convolutional neural networks, to recurrent neural networks with gated recurrent units (GRU) and long-short
               term memory (LSTM) structures. The goal of Part 1 is to understand forward propagation, loss calculation,
               backward propagation, and gradient descent.
@@ -95,6 +95,144 @@
     </section>
 
     <section>
+
+      <h2 class="part-title">Part 2</h2>
+      
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/mt2.png"
+            alt="Project 1 part 2 pic"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h3>Focus</h3>
+              <ul>
+                <li>Convolutional Layers</li>
+                <li>Convolution Strides</li>
+                <li>Resampling</li>
+                <li>Pooling</li>
+                <li>Converting Scanning MLPs to CNNs/li>
+              </ul>
+            </div>
+            <div class="details-container">
+
+              <h3>Learning Outcomes</h3>
+              <ul>
+                <li>How to implement a CNN from scratch</li>
+                <li>How to implement convolutional and pooling layers</li>
+                <li>How to implement downsampling and upsampling layers</li>
+                <li>How to combine these along with components from Part 1 to compose a CNN of any size</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="text-container">
+            <p>
+              Here, I started by implementing the resampling operations for the convolutions. 
+              More specifically, I implemented  the forward and backward attribute functions of the 
+              Upsampling method, which add and drop intermediate 0s respectivelly during convolutions,
+              and the the forward and backward Downsampling methods, which are the inverse operations. 
+              I followed by implementing the resampling methods for 2D, which is what used for inputs 
+              like images where resampling is performed in both the x and y direction.
+              <br/>
+              <br/>
+            </p>
+            <p>
+              Then, I implemented 1d and 2d convolutions, and implemented forward and backward of the 
+              stride classes for each of them for stride = 1. I also implemented a class for convolutions
+              for strides > 1 by using the class of stride = 1 convolution layers followed by a 2D downsampling layer
+              with factor = stride.
+              <br/>
+              <br/>
+            </p>
+            <p>
+              For Pooling, I implemented both forward propagation and backward propagation for 1D and 2D max and mean pooling
+              for stride = 1, followed by classes for stride > 1.
+              Finally, I wrote code to implement a Flatten layer, which  squishes the high-dimensional convolutional
+              output into a lower-dimensional shape for the following linear layer
+              <br/>
+              <br/>
+            </p>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+  <section>
+
+      <h2 class="part-title">Part 3</h2>
+      
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/mt3.png"
+            alt="Project 1 part 3 pic"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h3>Focus</h3>
+              <ul>
+                <li>RNNs</li>
+                <li>GRU</li>
+                <li>CTC</li>
+                <li>Greedy Search and Beam Search</li>
+              </ul>
+            </div>
+            <div class="details-container">
+
+              <h3>Learning Outcomes</h3>
+              <ul>
+                <li>How to implement a CNN from scratch</li>
+                <li>How to implement convolutional and pooling layers</li>
+                <li>How to implement downsampling and upsampling layers</li>
+                <li>How to combine these along with components from Part 1 to compose a CNN of any size</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="text-container">
+            <p>
+              In Part 3, I implemented RNNs, GRUs, and CTC from scratch. To address the vanishing gradient problem, 
+              I employed techniques like using gradient-preserving activation functions, appropriate weight 
+              initialization, and architectural modifications such as gating mechanisms in GRUs and LSTMs.
+              <br/>
+              <br/>
+            </p>
+            <p>
+              I started by implementing the RNN Cell forward and backward methods, and followed by
+              creating the RNN Classifier. For the vanishing gradient problem, I coded a GRU (Gated recurrent unit) 
+              implementation, cosnisting of the forward method, where we calculate h_t, and the backward method,
+              where we calculate the gradient changes needed for optimization.
+              <br/>
+              <br/>
+            </p>
+            <p>
+              Then, I implemented CTC Loss, consisting of the forward method, where we calculate the Posterior Probability, 
+              and the backward, where we calculate the divergence, followed by decode the model output probabilities to get an
+              understandable output. For that, I implemented both Beam and Greedy Search: 
+              <br/>
+              Greedy Search takes the most probable output at each time step, and chooses the most likely time-aligned
+              sequence by choosing the symbol corresponding to the highest probability at that time step. An issue that arises
+              is that it misses out on alignments that can lead to higher probability outputs because it only selects 
+              the most probable output for each time step.
+              <br/>
+              Beam Search is a more effective decoding technique that obtains a sub-optimal result out of sequential decisions.
+              At each time step a list of possible outputs is maintained and the score for each possible output at
+              current time step is the accumulated with all the alignments that map to it. Based on this score, the
+              top-k beams aree selected to expand for the next time-step.
+              <br/>
+            </p>
+          </div>
+        </div>
+      </div>
       
     </section>
 
