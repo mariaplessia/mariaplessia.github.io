@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Image improvement via area-to-pixel filters</title>
+    <title>Image editing using OpenCV & Python</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
@@ -21,8 +21,8 @@
   </nav>
   
   <section id="about">
-      <h1 class="title">Area-to-pixel filter implementation</h1>
-      <p class="section__text__p1">Using OpenCV in Python to find a good combination of smoothing and sharpening filters to improve an image and make it as close as possible to the ground truth</p>
+      <h1 class="title">Image editing & Filtering using OpenCV in Python</h1>
+      <p class="section__text__p1">Enhancing images through filters</p>
       <p><br/><br/><br/><br/></p>
 
       <h2 class="part-title">Method</h2>
@@ -30,7 +30,7 @@
       <div class="section-container">
         <div class="section__pic-container">
           <img
-            src="./assets/imgimp/imgimp-vis.png"
+            src="./assets/image-improvement.png"
             alt="Project 1 part 1 pic"
             class="about-pic"
           />
@@ -47,7 +47,7 @@
             </p>
             
             <p>
-              For the rainbow image, I found that implementing a Gaussian filter first got rid of the noise in the blue areas, which was otherwise 
+              For the first image, I found that implementing a Gaussian filter first got rid of the noise in the blue areas, which was otherwise 
               intensified by all other filters. I did two convolutions of a 3x3 median filter with a sharpening filter in-between to 
               smooth out the slightly spiked noise; I found that although 1 such filter of higher size had great smoothing effect, the 
               little ripples of the cloud would also get smoothed out, so I chose this implementation to save the original edges of the 
@@ -64,7 +64,7 @@
 
             
             <p>
-              For the golf image, I started a median blur with a kernel size of 5, as it was full of spiked noise. Not all of it was removed but using 
+              For the second image, I started a median blur with a kernel size of 5, as it was full of spiked noise. Not all of it was removed but using 
               a higher kernel size compromised the blurring too much, so I followed by a sharpening filter and another median blur of kernel 3, to 
               remove the little remaining spiked noise.
               <br/>
@@ -78,7 +78,7 @@
               />
             
             <p>
-              For the pcb image, I also started a median blur with a kernel size of 3, as it was full of spiked noise. Then, I implemented a pass 
+              For the third image, I also started a median blur with a kernel size of 3, as it was full of spiked noise. Then, I implemented a pass 
               of a sharpening filter, and to remove the slight noise that was caused without affecting the edges I followed with a bilateral filter.
               <br/>
               <br/>
@@ -91,7 +91,7 @@
               />
 
             <p>
-             For the pots image, I started by sharpening it first, as the primary issue was the blurriness rather than the noise. Then, I followed 
+             For the fourth image, I started by sharpening it first, as the primary issue was the blurriness rather than the noise. Then, I followed 
               with a bilateral filter to smooth out the noise but preserve the edges.
               <br/>
               <br/>
