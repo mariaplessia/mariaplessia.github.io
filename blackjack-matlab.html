@@ -30,7 +30,7 @@
       <div class="section-container">
         <div class="section__pic-container">
           <img
-            src="./assets/matlabui-vis.png"
+            src="./assets/blj-vis.png"
             alt="Data Analysis UI Window"
             class="about-pic"
             style="max-width: 100%; height: auto;"
@@ -39,32 +39,70 @@
         <div class="text-container" style="width: 70%;">
             
             <p>
-              This Data Visualization Tool is a user-friendly interface designed to visualize climate data from a .csv file, specifically tailored for 
-              temperature data and easily customizable. Utilizing MATLAB's AppDesigner, this tool empowers users to explore and analyze historical 
-              temperature trends conveniently while showcasing UI Design skills and MATLAB expertise.
+              This GUI is a graphics user interface designed on MATLAB, on which the card game Blackjack was developed to demonstrate
+              programming versatility and range.
               <br/>
               <br/>
             </p>
             
             <h2>Key Features:</h2>
               <ul>
-                <li>Intuitive User Interface</li>
-                <li>Streamlined Data Loading</li>
-                <li>Interactive Plotting</li>
-                <li>Plot Customization</li>
-                <li>Precision Zoom Controls</li>
+                <li>Use of ui-graphics (uifigure, uibutton,
+uiaxes, uiimage) to create an
+interactive, dynamic display that
+gives the user the ability to click on
+buttons on the display.</li>
+                <li>The program shows realistic images
+of the first two player cards dealt.
+randomly for every round.</li>
+                <li>The exact cards are displayed in the
+command window (rank & suit, e.g.
+Ace of Spades).</li>
+                <li>The program plays Händel’s
+Hallelujah when the player wins and
+produces a gong sound when the
+player loses.</li>
               </ul>
           
         </br></br></br>
           <h2>Key Functionalities:</h2>
             <ol>
-              <li>Load Data: Users can easily load their climate data from a .csv file, adhering to the specific format provided. The tool ensures error-free loading and parsing, offering a seamless experience.</li>
-              <li>Plotting Interface: Upon successful data loading, the tool presents an interactive plotting area where temperature data is displayed. The plot initially shows all temperatures per month, providing a comprehensive overview.</li>
-              <li>Grouping by Year Averages: Users have the option to group temperature data by year averages, effectively reducing the plot's size and simplifying the visualization. This feature enhances readability, especially for long-term trend analysis.</li>
-              <li>Overlay ±1σ (Standard Deviation): When grouping data by annual averages, users can choose to overlay the standard deviation range (±1σ) on the annual average. This provides insight into temperature variability, aiding in understanding the data's distribution.</li>
-              <li>Zoom Functionality: The tool offers custom zoom controls, allowing users to zoom around a center value of interest. By inputting a specific year or using a slider, users can adjust the zoom level while keeping the focus on a particular time period.</li>
-            </ol>
+              <li>Scores were computed twice so that the player can see their score both as it
+is and when counting the Ace as 11. Both scores are printed every time the
+player gets a new card so they can make appropriate decisions for their next
+move.</li>
+              <li>If the player exceeded 20 points, the program would break out of the while
+loop and go on to check the win conditions, which were structured in a
+specific order. Before going to the win conditions, the program would choose
+the most favorable score out of the two scores (with Aces as 1 or 11). Then if
+the player had 21 points, as long as the dealer did not also have 21 points, the
+player would have Blackjack and therefore win. If the dealer had Blackjack,
+this was taken care of by the dealer logic code. </li>
+              <li>The winner was determined by choosing the most favorable score in the
+playerscore and dealerscore matrices and then a series of if statement in this
+order: if dealerscore = 21, if playerscore >21, if dealerscore >21, if playerscore
+= 21, if playerscore = dealerscore, if playerscore and dealerscore both < 21
+(and then the conditions for this case).</li>
+              <li>The stay and hit rectangles on the screen are
+actual buttons. The cards displayed on the screen
+and the command window output above are
+random and will vary every time. The output above
+is before the player hits any of the buttons, as the
+uifigure is set to close when the game finishes.</li>
+              </ol>
 
+          </br></br></br>
+
+          <h2>Example output from a program run</h2>
+
+          <code>
+            Player Card 1: Jack of Spades
+            Dealer Card 1: 5 of Spades
+            Player Card 2: 8 of Diamonds
+            Dealer Card 2: Queen of Spades
+            Player Score: 18
+            Player Score counting Aces as 11: 18
+          </code>
             
         
         </div>
@@ -75,10 +113,6 @@
         class="icon arrow"
         onclick="location.href='./#details'"
       />
-    </section>
-
-    <section>
-      
     </section>
 
 </body>
