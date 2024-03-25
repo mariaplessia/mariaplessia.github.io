@@ -45,24 +45,17 @@
               <br/>
             </p>
             
-            <h2>Key Features:</h2>
-              <ul>
-                <li>Use of ui-graphics (uifigure, uibutton,
-uiaxes, uiimage) to create an
-interactive, dynamic display that
-gives the user the ability to click on
-buttons on the display.</li>
-                <li>The program shows realistic images
-of the first two player cards dealt.
-randomly for every round.</li>
-                <li>The exact cards are displayed in the
-command window (rank & suit, e.g.
-Ace of Spades).</li>
-                <li>The program plays Händel’s
-Hallelujah when the player wins and
-produces a gong sound when the
-player loses.</li>
-              </ul>
+            <h2>Pipeline</h2>
+              <ol>
+                <li>Detect Depth</li>
+                <li>Crop to Foreground</li>
+                <li>Separate Contours</li>
+                <li>Fit Bounding Boxes</li>
+                <li>Filter Across averaged Video Live Frames</li>
+                <li>Classify</li>
+                <li>Increment Focus Depth</li>
+              </ol>
+
 
           <img 
               src="./assets/battery-setup.png"
