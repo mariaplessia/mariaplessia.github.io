@@ -3,54 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dynamic Climate Data Visualization Interface</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="mediaqueries.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image editing using OpenCV & Python</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
 </head>
 <body>
   
   <nav id="desktop-nav">
     <div class="logo">Maria Plessia</div>
-    <div>
-      <ul class="nav-links">
-        <a href="index.html">Main Page</a>
-      </ul>
-    </div>
+      <div>
+        <ul class="nav-links">
+          <a href="index.html">Main Page</a>
+        </ul>
+      </div>
   </nav>
   
   <section id="about">
-    <h1 class="title">Dynamic Climate Data Visualization Interface</h1>
-    <p class="section__text__p1">Empowering Insights through Intuitive UI Design</p>
-    
-    <div class="section-container">
-      <div class="text-container">
-        <p>
-          Immerse yourself in climate data exploration like never before with our meticulously crafted interface, engineered to marry seamless functionality with captivating design elements.
-        </p>
-        <h2>Key Features:</h2>
-        <ul>
-          <li>Intuitive User Interface: Navigate effortlessly through our interface, designed to guide users seamlessly through data loading, exploration, and analysis.</li>
-          <li>Streamlined Data Loading: Seamlessly import climate data from .csv files, following the format of official Bureau of Meteorology datasets.</li>
-          <li>Interactive Plotting: Visualize temperature trends effortlessly with interactive plotting capabilities, offering both monthly and yearly averages.</li>
-          <li>Custom Plot Customization: Empower users with the ability to group temperature data by yearly averages and overlay ±1σ for enhanced analysis precision.</li>
-          <li>Precision Zoom Controls: Utilize custom MATLAB uicontrols to zoom around specific years of interest, offering unparalleled precision and control over data exploration.</li>
-        </ul>
-        <h2>How We Achieved This:</h2>
-        <p>
-          We meticulously designed our user interface using MATLAB's AppDesigner, ensuring a harmonious blend of functionality and aesthetics. Robust error handling guarantees smooth interactions, while adherence to best practices in backend coding ensures scalability and maintainability for future expansions.
-        </p>
-        <p>
-          Experience the fusion of art and science in climate data exploration with our interface, setting a new standard in user-centric design for scientific applications.
-        </p>
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#details'" />
-  </section>
+      <h1 class="title">Image editing & Filtering using OpenCV in Python</h1>
+      <p class="section__text__p1">Enhancing images through filters</p>
+      <p><br/><br/><br/><br/></p>
 
-  <section>
-    <!-- Additional sections can be added here if needed -->
-  </section>
+
+      
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/matlabUI-vis.png"
+            alt="Project 1 part 1 pic"
+            class="about-pic"
+          />
+        </div>
+        <div class="text-container">
+            
+            <p>
+              This Data Visualization Tool is a user-friendly interface designed to visualize climate data from a .csv file, specifically tailored for 
+              temperature data and easily customizable. Utilizing MATLAB's AppDesigner, this tool empowers users to explore and analyze historical 
+              temperature trends conveniently while showcasing UI Design skills and MATLAB expertise.
+              <br/>
+              <br/>
+            </p>
+            
+            <h2>Key Features:</h2>
+              <ul>
+                <li>Intuitive User Interface</li>
+                <li>Streamlined Data Loading</li>
+                <li>Interactive Plotting</li>
+                <li>Plot Customization</li>
+                <li>Precision Zoom Controls</li>
+              </ul>
+
+          <h2>Key Functionalities:</h2>
+            <ol>
+              <li>Load Data: Users can easily load their climate data from a .csv file, adhering to the specific format provided. The tool ensures error-free loading and parsing, offering a seamless experience.</li>
+              <li>Plotting Interface: Upon successful data loading, the tool presents an interactive plotting area where temperature data is displayed. The plot initially shows all temperatures per month, providing a comprehensive overview.</li>
+              <li>Grouping by Year Averages: Users have the option to group temperature data by year averages, effectively reducing the plot's size and simplifying the visualization. This feature enhances readability, especially for long-term trend analysis.</li>
+              <li>Overlay ±1σ (Standard Deviation): When grouping data by annual averages, users can choose to overlay the standard deviation range (±1σ) on the annual average. This provides insight into temperature variability, aiding in understanding the data's distribution.</li>
+              <li>Zoom Functionality: The tool offers custom zoom controls, allowing users to zoom around a center value of interest. By inputting a specific year or using a slider, users can adjust the zoom level while keeping the focus on a particular time period.</li>
+            </ol>
+
+            
+        
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#details'"
+      />
+    </section>
+
+    <section>
+      
+    </section>
 
 </body>
 </html>
