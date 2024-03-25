@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Battery Detection using OpenCV & Python</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+</head>
+<body>
+  
+  <nav id="desktop-nav">
+    <div class="logo">Maria Plessia</div>
+      <div>
+        <ul class="nav-links">
+          <a href="index.html">Main Page</a>
+        </ul>
+      </div>
+  </nav>
+  
+  <section id="about">
+      <h1 class="title">Blackjack Game GUI using MATLAB</h1>
+      <p class="section__text__p1">Developing Games on MATLAB</p>
+      <p><br/><br/><br/><br/></p>
+
+
+      
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/battery-vis.png"
+            alt="Battery Detection"
+            class="about-pic"
+            style="max-width: 100%; height: auto;"
+          />
+        </div>
+        <div class="text-container" style="width: 70%;">
+            
+            <p>
+              This GUI is a graphics user interface designed on MATLAB, on which the card game Blackjack was developed to demonstrate
+              programming versatility and range.
+              <br/>
+              <br/>
+            </p>
+            
+            <h2>Key Features:</h2>
+              <ul>
+                <li>Use of ui-graphics (uifigure, uibutton,
+uiaxes, uiimage) to create an
+interactive, dynamic display that
+gives the user the ability to click on
+buttons on the display.</li>
+                <li>The program shows realistic images
+of the first two player cards dealt.
+randomly for every round.</li>
+                <li>The exact cards are displayed in the
+command window (rank & suit, e.g.
+Ace of Spades).</li>
+                <li>The program plays Händel’s
+Hallelujah when the player wins and
+produces a gong sound when the
+player loses.</li>
+              </ul>
+
+          <img 
+              src="./assets/battery-setup.png"
+              alt="Battery Setup"
+              class="about-pic method"
+              />
+          
+        </br></br></br>
+          <h2>Key Functionalities:</h2>
+            <ol>
+              <li>Scores were computed twice so that the player can see their score both as it
+is and when counting the Ace as 11. Both scores are printed every time the
+player gets a new card so they can make appropriate decisions for their next
+move.</li>
+              <li>If the player exceeded 20 points, the program would break out of the while
+loop and go on to check the win conditions, which were structured in a
+specific order. Before going to the win conditions, the program would choose
+the most favorable score out of the two scores (with Aces as 1 or 11). Then if
+the player had 21 points, as long as the dealer did not also have 21 points, the
+player would have Blackjack and therefore win. If the dealer had Blackjack,
+this was taken care of by the dealer logic code. </li>
+              <li>The winner was determined by choosing the most favorable score in the
+playerscore and dealerscore matrices and then a series of if statement in this
+order: if dealerscore = 21, if playerscore >21, if dealerscore >21, if playerscore
+= 21, if playerscore = dealerscore, if playerscore and dealerscore both < 21
+(and then the conditions for this case).</li>
+              <li>The stay and hit rectangles on the screen are
+actual buttons. The cards displayed on the screen
+and the command window output above are
+random and will vary every time. The output above
+is before the player hits any of the buttons, as the
+uifigure is set to close when the game finishes.</li>
+              </ol>
+
+          </br></br></br>
+
+          <h2>Example output from a program run</h2>
+          <pre>
+          <code>
+            Player Card 1: Jack of Spades
+            Dealer Card 1: 5 of Spades
+            Player Card 2: 8 of Diamonds
+            Dealer Card 2: Queen of Spades
+            Player Score: 18
+            Player Score counting Aces as 11: 18
+          </code>
+           </pre>
+            
+        
+        </div>
+
+        </br></br></br>
+        </br></br></br>
+        
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#details'"
+      />
+    </section>
+
+</body>
+</html>
