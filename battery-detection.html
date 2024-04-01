@@ -39,8 +39,13 @@
         <div class="text-container" style="width: 70%;">
             
             <p>
-              The battery detection and classification program is a project developed as part of a team within the Computer Vision for Engineers class. For more detailed information,
-              please contact me and I'd be happy to share more details.
+              The Automatic Waste Battery Sorting program is a project developed as part of a team within the Computer Vision for Engineers class (24-678) at Carnegie Mellon University. 
+              The development stack makes use of OpenCV within a Python environment.
+
+              <br/>
+              
+              <it> If you are a recruiter and would like to discuss this project in detail, please contact me. </it>
+              
               <br/>
               <br/>
             </p>
@@ -64,45 +69,30 @@
               />
           
         </br></br></br>
-          <h2>Key Functionalities:</h2>
-            <ol>
-              <li>Scores were computed twice so that the player can see their score both as it
-is and when counting the Ace as 11. Both scores are printed every time the
-player gets a new card so they can make appropriate decisions for their next
-move.</li>
-              <li>If the player exceeded 20 points, the program would break out of the while
-loop and go on to check the win conditions, which were structured in a
-specific order. Before going to the win conditions, the program would choose
-the most favorable score out of the two scores (with Aces as 1 or 11). Then if
-the player had 21 points, as long as the dealer did not also have 21 points, the
-player would have Blackjack and therefore win. If the dealer had Blackjack,
-this was taken care of by the dealer logic code. </li>
-              <li>The winner was determined by choosing the most favorable score in the
-playerscore and dealerscore matrices and then a series of if statement in this
-order: if dealerscore = 21, if playerscore >21, if dealerscore >21, if playerscore
-= 21, if playerscore = dealerscore, if playerscore and dealerscore both < 21
-(and then the conditions for this case).</li>
-              <li>The stay and hit rectangles on the screen are
-actual buttons. The cards displayed on the screen
-and the command window output above are
-random and will vary every time. The output above
-is before the player hits any of the buttons, as the
-uifigure is set to close when the game finishes.</li>
-              </ol>
 
+          <h2>Considered Approaches</h2>
+
+          <ul>
+            <li>Classical Computer Vision (Color/Depth Detection)</li>
+            <li>Machine Learning Methods (PCA, Deep Learning)</li>
+          </ul>
+          
+          </br>
+
+          <p>
+            Although ML methods, and particularly CNNs, are a robust way to solve detection problems, their use presents a challenge in this particular context. 
+            Our program's aim is to be able to identify batteries without depending on the particular branding appearance, as what is important in waste battery separation is
+            grouping same types of batteries together, which is rather based on their shape and size. Employing CNNs would require the creation of a new training dataset
+            that would need to capture all lighting and position possibilities in a container of batteries, which is neither efficient nor robust. That is because supervised learning 
+            requires labeled training data. In contrast, unsupervised learning does not. Particularly, we identified that using depth as the primary factor for grouping,
+            as color is not a reliable marker of battery type, as there is no consistency among different brands, and inconsistent lighting & reflection changes color values.
+
+          </p>
+          
           </br></br></br>
 
           <h2>Example output from a program run</h2>
-          <pre>
-          <code>
-            Player Card 1: Jack of Spades
-            Dealer Card 1: 5 of Spades
-            Player Card 2: 8 of Diamonds
-            Dealer Card 2: Queen of Spades
-            Player Score: 18
-            Player Score counting Aces as 11: 18
-          </code>
-           </pre>
+          
             
         
         </div>
